@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+.container1 {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-image: url("Images/bg\ image.jpg");
+  background-size: cover;
+  /* background-position: 0px -23px; */
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 .box {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+nav {
+  height: 85px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+nav .navlogo {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navlogo img {
+  height: 40px;
+  margin-left: 16px;
+}
+
+nav .navoptions {
+  height: 54%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* border: 2px solid white; */
+}
+
+nav .navoptions select {
+  height: 30px;
+  width: 60%;
+  min-width: 130px;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.1);
+  color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+nav .navoptions select option {
+  color: black;
+  text-align: center;
+}
+
+nav .navoptions button {
+  height: 30px;
+  min-width: 90px;
+  width: 34%;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.hero {
+  padding-top: 140px;
+  height: 80%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero span {
+  text-align: center;
+  line-height: 40px;
+}
+
+.hero .span1 {
+  font-weight: 1000;
+  font-size: 56px;
+  line-height: 70px;
+}
+
+.hero .span2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.hero .span3 {
+  font-weight: 500;
+  padding: 30px 0 10px 0px;
+}
+
+.container1 .getdata {
+  width: 41%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.getdata input {
+  height: 60px;
+  min-width: 250px;
+  width: 86%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 0.1px solid gray;
+  border-radius: 3px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.getdata input::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+.getdata img {
+  height: 4px;
+}
+
+.getdata button {
+  height: 60px;
+  min-width: 164px;
+  width: 47%;
+  background-color: rgb(229, 9, 20);
+  border-radius: 5px;
+  color: white;
+  padding: 12px;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container2 {
+  /* height: 208vh; */
+  width: 100%;
+  background-color: black;
+  border-top: 9px solid transparent;
+  border-image: linear-gradient(to right, violet, red, violet);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+  overflow-x: hidden;
+}
+
+.maincontent1 {
+  /* border: 2px solid white; */
+  height: 400px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}
+
+.container2 h2 {
+  color: white;
+  /* padding-left: 31px; */
+}
+
+.maincontent1 .photodiv {
+  /* border: 2px solid white; */
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.photodiv .smallimg {
+  height: 82%;
+  min-width: 179px;
+  /* width: 15%; */
+  margin: 0 25px;
+  background-color: white;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: -11px 0px; */
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+}
+
+.photodiv .extraimgdiv1,
+.photodiv .extraimgdiv2 {
+  display: none;
+}
+
+.smallimg:hover {
+  transform: scale(1.07);
+}
+
+.maincontent1 .smallimg1 {
+  background-image: url("Images/1\ \(Squid\ game\).jpg");
+}
+
+.maincontent1 .smallimg2 {
+  background-image: url("Images/2\ \(Aap\ jaisa\ koi\).jpg");
+}
+
+.maincontent1 .smallimg3 {
+  background-image: url("Images/3\ \(Jaat\).webp");
+}
+
+.maincontent1 .smallimg4 {
+  background-image: url("Images/4\ \(rana\ naidu\).jpg");
+}
+
+.maincontent1 .smallimg5 {
+  background-image: url("Images/5\ \(royals\).jpg");
+}
+
+.smallimg .number {
+  position: relative;
+  top: 122px;
+  right: 19px;
+  color: black;
+  font-size: 114px;
+  font-weight: 900;
+  font-family: monospace;
+  text-shadow: -1px -1px white, 1px -1px white, -1px 1px white, 1px 1px white;
+}
+
+.maincontent2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.maincontent2 h2 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.maincontent2 .smalldivcontainer {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* border: 2px solid white; */
+}
+
+.smalldivcontainer .smalldiv {
+  height: auto;
+  min-width: 280px;
+  width: 15%;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(4, 2, 46),
+    rgba(113, 11, 182, 0.597)
+  );
+  display: flex;
+  flex-direction: column;
+  /* padding: 19px 15px; */
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.smalldivcontainer .smalldiv h2 {
+  padding-left: 20px;
+  padding-top: 12px;
+}
+
+.smalldiv p {
+  padding-left: 20px;
+}
+
+.smalldivcontainer .smalldiv2 h2,
+.smalldiv4 h2 {
+  line-height: 31px;
+}
+
+.smalldiv p {
+  color: grey;
+}
+
+.figurediv {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontent3 {
+  width: 80%;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  overflow: none;
+}
+
+.maincontent3 .faqheading {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.maincontent3 .faqdiv {
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.faqdiv .fdiv {
+  height: 85px;
+  width: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.3);
+  padding: 0px 25px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.fdiv:hover {
+  background-color: rgba(128, 128, 128, 0.55);
+}
+
+.fdiv h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.4em;
+  min-width: 200px;
+}
+
+.plussign {
+  height: 55px;
+  width: 55px;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3 {
+  /* height: 130vh; */
+  /* max-width: ; */
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.footercontent {
+  margin: auto;
+  width: 80%;
+}
+
+.footercontent1 {
+  /* height: 32%; */
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footercontent1 span {
+  color: white;
+  font-weight: 400;
+  margin-top: 64px;
+  margin-bottom: 8px;
+}
+
+.footercontent1 .getinput {
+  /* border: 2px solid white; */
+  /* height: 28%; */
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.getinput input {
+  height: 80px;
+  min-width: 193px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.15);
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: white;
+  padding-left: 9px;
+  font-size: 16px;
+}
+
+.getinput input::placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+.getinput button {
+  height: 79px;
+  min-width: 160px;
+  width: 33%;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footercontent2 {
+  /* height: 36%; */
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.footercontent2 p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  padding: 22px 0px;
+}
+
+.listdiv ul {
+  list-style-type: none;
+}
+
+.footercontent2 a {
+  text-decoration: rgba(255, 255, 255, 0.7) underline;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+
+.footercontent2 .listdiv {
+  /* height: 100%; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.footercontent3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 19px;
+  margin-top: 23px;
+}
+
+.footercontent3 select {
+  width: 117px;
+  text-align: center;
+  padding-top: 3px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid gray;
+}
+
+.footercontent3 select option {
+  color: black;
+}
+
+.footercontent3 .p1 {
+  color: white;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footercontent3 .p2 {
+  color: white;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 150px;
+}
+
+.footercontent3 a {
+  color: rgb(68, 142, 244);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+  .maincontent1 {
+    height: 300px;
+  }
+
+  /* .maincontent1 .photodiv {
+    overflow: visible;
+  } */
+
+  .maincontent1 .photodiv .smallimg {
+    height: 197px;
+    min-width: 140px;
+  }
+
+  .smallimg .number {
+    font-size: 88px;
+    top: 91px;
+    right: 15px;
+  }
+
+  .photodiv .extraimgdiv1 {
+    display: block;
+    background-image: url("Images/8\ \(chaava\).jpg");
+  }
+
+  .maincontent2 .smalldivcontainer {
+    flex-wrap: wrap;
+  }
+
+  .maincontent2 .smalldivcontainer .smalldiv {
+    width: 45%;
+    justify-content: space-between;
+  }
+
+  .footercontent2 .listdiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+  .maincontent1 .photodiv .smallimg {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .maincontent1 {
+    height: 200px;
+  }
+
+  .maincontent1 .photodiv .smallimg {
+    height: 150px;
+    min-width: 100px;
+  }
+
+  .smallimg .number {
+    font-size: 77px;
+    top: 67px;
+    right: 10px;
+  }
+
+  .photodiv .extraimgdiv2 {
+    display: block;
+    background-image: url("Images/9\ \(hit\).jpg");
+  }
+
+  .footercontent1 .getinput {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .getinput {
+    align-self: flex-start;
+  }
+
+  .getinput input,
+  .getinput button {
+    height: 45px;
+  }
+
+  .footercontent2 .listdiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .maincontent1 .photodiv .smallimg {
+    margin: 0 8px;
+  }
+
+  .maincontent2 .smalldivcontainer .smalldiv {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero .span1 {
+    font-size: 32px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+
+  .hero .span2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero .span3 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .getdata {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+
+  .getdata input {
+    width: 100%;
+  }
+
+  .getdata button {
+    width: 50%;
+  }
+
+  nav {
+    width: 95%;
+    margin-top: 15px;
+  }
+
+  .container1 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .container1 .box {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footercontent2 .listdiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
